@@ -1,0 +1,7 @@
+2023-01-14 19:52:45.599 [main] ERROR net.sourceforge.tess4j.Tesseract - Unsupported image format. May need to install JAI Image I/O package.
+https://github.com/jai-imageio/jai-imageio-core
+java.lang.RuntimeException: Unsupported image format. May need to install JAI Image I/O package.
+https://github.com/jai-imageio/jai-imageio-core
+	at net.sourceforge.tess4j.Tesseract.doOCR(Tesseract.java:214)
+	at net.sourceforge.tess4j.Tesseract.doOCR(Tesseract.java:194)
+	at com.shawn.media.test.MediaTest.main(MediaTest.java:78)

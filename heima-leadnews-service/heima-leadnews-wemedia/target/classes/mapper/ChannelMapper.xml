@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.shawn.media.mapper.ChannelMapper">
+
+<!--    <select id="getNewsByCondition" resultType="java.util.List">-->
+<!--        SELECT * FROM wm_news wn-->
+<!--                 <where >-->
+<!--                    wn.channel_id = #{dto.channelId}-->
+<!--                     <if test="dto.keyword != null and dto.keyword != ''">-->
+<!--                        and MATCH(title,content) AGAINST(#{dto.keyword})-->
+<!--                     </if>-->
+
+<!--                     <if test="dto.beginDate != null">-->
+<!--                         and wn.publish_time <![CDATA[>]]> #{dto.beginDate}-->
+<!--                     </if>-->
+
+<!--                     <if test="dto.endDate != null">-->
+<!--                        and wn.publish_time <![CDATA[<]]> #{dto.endDate}-->
+<!--                     </if>-->
+
+<!--                     <if test="dto.status != null">-->
+<!--                         and wn.status = #{dto.status}-->
+<!--                     </if>-->
+<!--                 </where>-->
+<!--            limit #{dto.page} , #{dto.size} ;-->
+<!--    </select>-->
+
+</mapper>

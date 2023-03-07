@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.shawn.es.mapper.ArticleMapper">
+
+
+    <select id="initElasticSearch" resultType="com.shawn.es.entities.ArticleDoc">
+        SELECT aa.* , aac.content FROM ap_article aa,ap_article_config aacg, ap_article_content aac WHERE aa.id = aacg.article_id AND aa.id = aac.article_id AND aacg.is_delete != 1 AND aacg.is_down != 1 AND aacg.is_forward = 1;
+    </select>
+</mapper>
